@@ -1,9 +1,9 @@
 <template>
   <header
-    class="w-full bg-gray-100 h-16 flex items-center justify-between px-2"
+    class="w-full bg-gradient-to-r from-sky-500 to-indigo-500 h-16 flex items-center justify-between px-2"
   >
     <Avatar />
-    <section class="flex items-center space-x-4 text-gray-500">
+    <section class="flex items-center space-x-4 text-white">
       <ClockIcon class="w-6 h-6 cursor-pointer" />
       <PlusIcon class="w-6 h-6 cursor-pointer" @click="showNewChatView" />
       <EllipsisHorizontalIcon class="w-6 h-6 cursor-pointer" />

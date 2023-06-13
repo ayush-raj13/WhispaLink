@@ -1,15 +1,12 @@
 <template>
   <div class="w-full flex" :class="[isOwner ? 'justify-end' : 'justify-start']">
-    <div
-      class="px-2 py-1 rounded-lg text-sm max-w-[50%] min-w-[100px]"
-      :class="[isOwner ? 'bg-custom-owner-message' : 'bg-white']"
-    >
-      <div class="text-xs text-gray-500">{{ message.email }}</div>
-      <div>
-        {{ message.contents }}
-      </div>
-    </div>
-  </div>
+				<div>
+          <div class="text-xs mb-2" :class="[isOwner ? 'text-black' : 'text-gray-500']">{{ message.email }}</div>
+					<div :class="[isOwner ? 'bg-blue-600 text-white p-3 rounded-l-lg rounded-br-lg' : 'bg-white text-black p-3 rounded-r-lg rounded-bl-lg']">
+            <p class="text-sm">{{ message.contents }}</p>
+					</div>
+				</div>
+			</div>
 </template>
 
 <script setup lang="ts">

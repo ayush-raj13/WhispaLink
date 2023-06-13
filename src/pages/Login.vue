@@ -1,12 +1,13 @@
 <template>
   <section class="w-full h-full flex flex-col items-center justify-center">
-    <div class="w-80 flex flex-col items-center">
+    <h1 class="mb-12 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">WhispaLink</h1>
+    <div class="min-w-80 flex flex-col items-center bg-white bg-opacity-20 backdrop-blur-lg rounded-xl drop-shadow-lg p-12">
       <img />
 
       <h1 class="text-3xl mt-2 font-bold">Login to your account</h1>
       <p>
         Or
-        <span class="text-green-500"
+        <span class="text-white"
           ><router-link to="/register">create a new one</router-link></span
         >
       </p>

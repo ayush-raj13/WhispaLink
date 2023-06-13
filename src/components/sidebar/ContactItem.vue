@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex items-center px-2 hover:bg-gray-100 py-4 cursor-pointer relative"
+    class="flex items-center px-2 hover:bg-gray-100 py-4 cursor-pointer relative group"
   >
     <Avatar />
     <div class="flex flex-col ml-3">
-      <div>{{ contact.email }}</div>
+      <div class="text-white group-hover:text-black">{{ contact.email }}</div>
     </div>
   </div>
 </template>

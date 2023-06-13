@@ -1,10 +1,10 @@
 <template>
   <header
-    class="w-full h-28 bg-custom-whatsapp-2 flex items-end p-4 text-white"
+    class="w-full h-28 bg-gradient-to-r from-sky-500 to-indigo-500 flex items-end p-4 text-white"
   >
     <div class="flex items-center">
-      <ArrowLeftIcon class="w-6 cursor-pointer" @click="onBack" />
-      <div class="font-semibold text-lg ml-4">Add group participants</div>
+      <ArrowLeftIcon class="w-6 cursor-pointer text-black" @click="onBack" />
+      <div class="font-semibold text-lg ml-4 text-black">Add group participants</div>
     </div>
   </header>
   <div class="w-full flex mt-10 items-center justify-center">
@@ -32,7 +32,7 @@
     class="flex w-full justify-center mt-20"
   >
     <div
-      class="bg-custom-whatsapp-1 w-12 h-12 rounded-full text-white flex items-center justify-center cursor-pointer"
+      class="bg-white w-12 h-12 rounded-full text-blue-500 flex items-center justify-center cursor-pointer"
     >
       <CheckIcon class="w-6" @click="createGroup" />
     </div>
