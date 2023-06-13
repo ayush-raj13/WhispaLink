@@ -1,0 +1,123 @@
+{
+    "projectId": "64856d4426e17d530028",
+    "projectName": "WhispaLink",
+    "functions": [
+        {
+            "$id": "6486dccc12e46cc0ca93",
+            "name": "addMembers",
+            "runtime": "node-16.0",
+            "path": "functions/addMembers",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [
+                "any"
+            ],
+            "events": [],
+            "schedule": "",
+            "timeout": 15,
+            "variables": {
+                "APPWRITE_FUNCTION_API_KEY": "d4937eb545150471f34f857edf21fb4be2c98f849b7b51c1877b5c7e1cc96528d69d1db07ae362aab494f9ad57826b42bcfb26203f7c0e23288951425c0db23bfb3b3ac78db906539742b5af3f3a7a19f9ff2ad3537d4a5deb285cce3ccf88e2e52d040768d640f7f9655ca83e80deaa65823176739fb540530f9af3d2085c50",
+                "APPWRITE_FUNCTION_ENDPOINT": "https://cloud.appwrite.io/v1"
+            }
+        },
+        {
+            "$id": "648708f449e389295b88",
+            "name": "calculateContacts",
+            "runtime": "node-16.0",
+            "path": "functions/calculateContacts",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [
+                "any"
+            ],
+            "events": [
+                "teams.*.memberships.*.create"
+            ],
+            "schedule": "",
+            "timeout": 15,
+            "variables": {
+                "APPWRITE_FUNCTION_API_KEY": "7ba1610a86cfb8ef978601612b597c55ef17e282a555ca931ac1c65bb9c8869d8d54cfe39263dc03f88b895199a90f59b124fb9919e1dd8679c513ca5e68e8ac52af6ae6e7fe154ff1182e95cb94f7c16004caa0a4d44d7d71408c0b2c8015d31ea998dddbcdc791459f3af9446ed05cf205e7f312cdf569b8b0440b20e73913",
+                "APPWRITE_FUNCTION_ENDPOINT": "https://cloud.appwrite.io/v1"
+            }
+        }
+    ],
+    "databases": [
+        {
+            "$id": "whatsapp",
+            "name": "whatsapp",
+            "$createdAt": "2023-06-13T05:49:06.685+00:00",
+            "$updatedAt": "2023-06-13T05:49:06.685+00:00"
+        }
+    ],
+    "collections": [
+        {
+            "$id": "contacts",
+            "$permissions": [],
+            "databaseId": "whatsapp",
+            "name": "contacts",
+            "enabled": true,
+            "documentSecurity": true,
+            "attributes": [
+                {
+                    "key": "user_id",
+                    "type": "string",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "size": 255,
+                    "default": null
+                },
+                {
+                    "key": "contact_id",
+                    "type": "string",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "size": 255,
+                    "default": null
+                },
+                {
+                    "key": "email",
+                    "type": "string",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "format": "email",
+                    "default": null
+                }
+            ],
+            "indexes": [
+                {
+                    "key": "user_contact",
+                    "type": "unique",
+                    "status": "available",
+                    "attributes": [
+                        "user_id",
+                        "contact_id"
+                    ],
+                    "orders": [
+                        "ASC",
+                        "ASC"
+                    ]
+                },
+                {
+                    "key": "user_id",
+                    "type": "key",
+                    "status": "available",
+                    "attributes": [
+                        "user_id"
+                    ],
+                    "orders": [
+                        "ASC"
+                    ]
+                }
+            ]
+        }
+    ]
+}
