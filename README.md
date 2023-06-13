@@ -1,18 +1,29 @@
-# Vue 3 + TypeScript + Vite
+## WhispaLink
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![Screenshot from 2023-06-13 17-54-43](https://github.com/ayush-raj13/WhispaLink/assets/113297899/6d145c35-b44b-477d-8d76-1681da36076c)
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Screenshot from 2023-06-13 17-54-11](https://github.com/ayush-raj13/WhispaLink/assets/113297899/632c67a0-0cb1-4729-b5fd-ab92cd564a15)
 
-## Type Support For `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+![Screenshot from 2023-06-13 17-53-44](https://github.com/ayush-raj13/WhispaLink/assets/113297899/728fb045-8dbc-4538-8176-e28037f605bb)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+WhispaLink is a real-time messaging website created with Appwrite, VueJS and Tailwind CSS. I created this as a solution for Appwrite Hackathon 2023.
+
+##  Appwrite Setup
+
+Before using this application, make sure you have Appwrite server up and running. You can follow [Appwrite installation guide](https://appwrite.io/docs/installation).
+
+1. Install [Appwrite CLI](https://appwrite.io/docs/command-line)
+2. Login with `appwrite login`
+3. Visit your Appwrite Console and create project with for this application
+4. Run initial setup with `appwrite deploy --all`
+5. In the `appwrite.json` file, change the function variables for `APPWRITE_FUNCTION_ENDPOINT` to the correct endpoint for your setup.
+
+### Application setup
+
+1. Navigate to the root of this project
+2. Make sure that the values in `src/config.ts` are correct for your project
+3. Run `npm i`
+4. Run `npm run dev`
