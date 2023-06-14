@@ -9,7 +9,7 @@ export default {
           "whatsapp-1": "#00a884",
           "whatsapp-2": "#008069",
           "owner-message": "#d9fdd3",
-          "chat-bg": "#efeae2",
+          "chat-bg": "#9ac5f4",
         },
       },
     },

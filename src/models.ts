@@ -4,4 +4,5 @@ export interface MessageModel {
   groupId: string;
   email: string;
   contents: string;
+  time: string;
 }

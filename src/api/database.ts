@@ -58,6 +58,7 @@ export async function getMessages(groupId: string): Promise<MessageModel[]> {
           groupId: document.group_id,
           contents: document.contents,
           email: document.email,
+          time: document.$createdAt,
         };
       });
     });
