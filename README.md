@@ -1,12 +1,12 @@
 ## WhispaLink
 
-![Screenshot from 2023-06-13 17-54-43](https://github.com/ayush-raj13/WhispaLink/assets/113297899/6d145c35-b44b-477d-8d76-1681da36076c)
+![Screenshot from 2023-06-14 14-02-11](https://github.com/ayush-raj13/WhispaLink/assets/113297899/c559d272-561e-46aa-be55-ffbc6d7fc5e3)
 
 
-![Screenshot from 2023-06-13 17-54-11](https://github.com/ayush-raj13/WhispaLink/assets/113297899/632c67a0-0cb1-4729-b5fd-ab92cd564a15)
+![Screenshot from 2023-06-14 14-01-53](https://github.com/ayush-raj13/WhispaLink/assets/113297899/fe9fd0c4-cb9d-4c3d-bd96-ae27a26725d2)
 
 
-![Screenshot from 2023-06-14 13-58-46](https://github.com/ayush-raj13/WhispaLink/assets/113297899/bff5615b-6cd4-403a-9797-a82627e3ee59)
+![Screenshot from 2023-06-14 14-01-31](https://github.com/ayush-raj13/WhispaLink/assets/113297899/81e3af91-f0dc-4610-8b24-9e88268357ae)
 
 
 WhispaLink is a real-time messaging website created with Appwrite, VueJS and Tailwind CSS. I created this as a solution for Appwrite Hackathon 2023.
