@@ -54,6 +54,7 @@ client.subscribe(
       userId: payload.user_id,
       groupId: payload.group_id,
       email: payload.email,
+      time: new Date(Date.now()).toISOString(),
     });
     console.log(event);
   }
